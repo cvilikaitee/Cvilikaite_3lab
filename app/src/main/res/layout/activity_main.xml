@@ -43,18 +43,18 @@
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 
     <Button
-        android:id="@+id/button44"
+        android:id="@+id/buttonDot"
         android:layout_width="105dp"
         android:layout_height="62dp"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
         android:background="@color/white"
         android:text="."
-        app:layout_constraintStart_toEndOf="@+id/button43"
+        app:layout_constraintStart_toEndOf="@+id/zero"
         app:layout_constraintTop_toBottomOf="@+id/three" />
 
     <Button
-        android:id="@+id/button42"
+        android:id="@+id/plusMinus"
         android:layout_width="105dp"
         android:layout_height="62dp"
         android:textColor="@color/black"
@@ -65,14 +65,14 @@
         app:layout_constraintTop_toBottomOf="@+id/one" />
 
     <Button
-        android:id="@+id/button43"
+        android:id="@+id/zero"
         android:layout_width="105dp"
         android:layout_height="62dp"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
         android:background="@color/white"
         android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/button42"
+        app:layout_constraintStart_toEndOf="@+id/plusMinus"
         app:layout_constraintTop_toBottomOf="@+id/two" />
 
     <Button
@@ -81,7 +81,7 @@
         android:layout_height="62dp"
         android:background="#AD5D0F6A"
         android:text="="
-        app:layout_constraintStart_toEndOf="@+id/button44"
+        app:layout_constraintStart_toEndOf="@+id/buttonDot"
         app:layout_constraintTop_toBottomOf="@+id/plus" />
 
     <Button
@@ -258,7 +258,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button3"
@@ -269,7 +269,7 @@
         android:background="@color/white"
         android:text="M+"
         app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button8"
@@ -302,32 +302,41 @@
         android:background="@color/white"
         android:text="MR"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="413dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="52dp"
+        android:id="@+id/editText"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="381dp"
-        android:layout_height="44dp"
-        android:text="Calculator"
+        android:layout_width="406dp"
+        android:layout_height="42dp"
         android:gravity="center"
+        android:text="Calculator"
         android:textColor="#000000"
         android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="410dp"
+        android:layout_height="39dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
