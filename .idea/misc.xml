@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/MIPT/3labCvlilikaite/app/src/main/res/layout/activity_main.xml" value="0.2608695652173913" />
         <entry key="..\:/Users/1428142/AndroidStudioProjects/3labCvlilikaite/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/1428142/AndroidStudioProjects/Cvilikaite_3lab/app/src/main/res/layout/activity_main.xml" value="0.28532608695652173" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

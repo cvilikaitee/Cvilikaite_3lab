@@ -309,6 +309,7 @@
         android:layout_width="409dp"
         android:layout_height="47dp"
         android:layout_marginTop="5dp"
+        android:textSize="20sp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
@@ -334,7 +335,9 @@
         android:id="@+id/textView2"
         android:layout_width="410dp"
         android:layout_height="39dp"
-        android:text="TextView"
+        android:gravity="left"
+        android:textSize="16sp"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
