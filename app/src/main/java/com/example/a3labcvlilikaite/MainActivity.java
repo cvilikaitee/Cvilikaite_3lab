@@ -136,58 +136,88 @@ public class MainActivity extends AppCompatActivity {
         minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
-                mSubtract = true;
-                crunchifyEditText.setText(null);
-                textView.setText(String.valueOf(mValueOne)+ "-");
+                if (crunchifyEditText == null) {
+                    crunchifyEditText.setText("");
+                } else {
+                    mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
+                    mSubtract = true;
+                    crunchifyEditText.setText(null);
+                    textView.setText(String.valueOf(mValueOne)+ "-");
+                }
+
             }
         });
         root.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
-                double square = Math.sqrt((double) mValueOne);
-                crunchifyEditText.setText(square+ "");
-                textView.setText("√"+String.valueOf(mValueOne));
-                mValueOne = (float) square;
+                if (crunchifyEditText == null) {
+                    crunchifyEditText.setText("");
+                } else {
+                    mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
+                    double square = Math.sqrt((double) mValueOne);
+                    crunchifyEditText.setText(square+ "");
+                    textView.setText("√"+String.valueOf(mValueOne));
+                    mValueOne = (float) square;
+                }
+
             }
         });
 
         mult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
-                crunchifyMultiplication = true;
-                crunchifyEditText.setText(null);
-                textView.setText(String.valueOf(mValueOne)+ "*");
+                if (crunchifyEditText == null) {
+                    crunchifyEditText.setText("");
+                } else {
+                    mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
+                    crunchifyMultiplication = true;
+                    crunchifyEditText.setText(null);
+                    textView.setText(String.valueOf(mValueOne)+ "*");
+                }
+
             }
         });
 
         div.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
-                crunchifyDivision = true;
-                crunchifyEditText.setText(null);
-                textView.setText(String.valueOf(mValueOne)+ "/");
+                if (crunchifyEditText == null) {
+                    crunchifyEditText.setText("");
+                } else {
+                    mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
+                    crunchifyDivision = true;
+                    crunchifyEditText.setText(null);
+                    textView.setText(String.valueOf(mValueOne)+ "/");
+                }
+
             }
         });
         pow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
-                double pow = Math.pow((double) mValueOne,2);
-                crunchifyEditText.setText(pow+ "");
-                textView.setText(String.valueOf(pow)+ "^2");
-                mValueOne = (float) pow;
+                if (crunchifyEditText == null) {
+                    crunchifyEditText.setText("");
+                } else {
+                    mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
+                    double pow = Math.pow((double) mValueOne,2);
+                    crunchifyEditText.setText(pow+ "");
+                    textView.setText(String.valueOf(pow)+ "^2");
+                    mValueOne = (float) pow;
+                }
+
             }
         });
         plusMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
-                mValueOne = mValueOne * -1;
-                crunchifyEditText.setText(String.valueOf(mValueOne));;
+                if (crunchifyEditText == null) {
+                    crunchifyEditText.setText("");
+                } else {
+                    mValueOne = Float.parseFloat(crunchifyEditText.getText() + "");
+                    mValueOne = mValueOne * -1;
+                    crunchifyEditText.setText(String.valueOf(mValueOne));
+                }
+
             }
         });
 
@@ -240,7 +270,12 @@ public class MainActivity extends AppCompatActivity {
         buttonDot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                crunchifyEditText.setText(crunchifyEditText.getText() + ".");
+                if (crunchifyEditText == null) {
+                    crunchifyEditText.setText(crunchifyEditText.getText() + "0.");
+                } else {
+                    crunchifyEditText.setText(crunchifyEditText.getText() + ".");
+                }
+
             }
         });
     }
